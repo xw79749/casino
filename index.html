@@ -39,6 +39,12 @@
     }
   ]
 }
+    const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
 </script>
 
 <style>
@@ -168,6 +174,8 @@ text-shadow: 0 0 15px #ff4ee6;
       .hamburger { display:block; }
     }
 </style>
+</head>
+<body>
   <!-- 導覽列 -->
   <nav id="navbar">
     <div class="hamburger">☰</div>
@@ -180,9 +188,7 @@ text-shadow: 0 0 15px #ff4ee6;
       <li><a href="#wg-intro">WG娛樂城介紹</a></li>
       <li><a href="#ranking">娛樂城排行榜</a></li>
     </ul>
-  </nav>
-</head>
-<body>
+  </nav>  
 <!-- ===== 背景 Canvas ===== -->
 <canvas id="bgCanvas"></canvas>
 
